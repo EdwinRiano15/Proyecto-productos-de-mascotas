@@ -9,22 +9,25 @@
 </head>
 <body>
     <div class="contenedor"> </div>
-    <header> 
+    <header class="encabezado">
+        <nav class="nav-principal" aria-label="Navegación principal">
+            <a class="marca-nav" href="../index.html#inicio" aria-label="Huellas Pet Shop, inicio">
+                <span class="icono-marca" aria-hidden="true">  </span>
+                <span class="texto-marca"><strong>Productos para tu mascotas</strong><small>Tarjeta de prodcutos </small></span>
+            </a>
 
-        <h1>Productos para tu mascota</h1>
-        <p>Todo lo que necesita tu mascota para estar feliz y saludable</p>
+            <div class="nav-enlaces">
+                <a href="../index.html#inicio">Inicio</a>
+                <a href="../index.html#catalogo">Catálogo</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a class="nav-activo" href="#content" aria-current="page">Tarjeta de productos</a>
+                <a href="../index.html#horarios-ubicacion">Horarios y ubicación</a>
+            </div>
+
+           
+        </nav>
 
     </header>
-
-    <nav> 
-
-    
-    
-        <a href="pagina principal">Volver al inicio</a>
-     
-
-
-    </nav>
 
 
     <section id="content"> 
@@ -85,6 +88,13 @@
   <button class="btn-carrito" type="button">Añadir al carrito</button>
 </article>
 
+<article class="producto">
+  <img src="imagenes/hamster.png" alt="Comida para hamster">
+  <h2>Comida para hamster</h2>
+  <p class="precio">$35.000$</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
 
 
     </section>
@@ -95,6 +105,6 @@
 
     </footer>
 
-    
+
 </body>
 </html>

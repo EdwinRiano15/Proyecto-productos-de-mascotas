@@ -19,7 +19,10 @@ body {
 
 #content{
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
     padding: 32px 0;
 
@@ -98,7 +101,7 @@ body {
 
 header {
 
-    padding: 24px 0 12px;
+    padding: 128px 0 32px;
     text-align: center;
     background-color: #35d64d;
     
@@ -121,25 +124,100 @@ header p {
     font-size: 30px;
 }
 
-nav {
-
-    display: flex;
-    gap: 20px;
-    padding: 12px 16px;
-    background-color: #86e844;
-    border-radius: 8px;
-    justify-content: center;
-
+.nav-principal {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 92%;
+    max-width: 1200px;
+    min-height: 100px;
+    margin: 0;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 18px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(24, 60, 44, 0.14);
 }
 
-nav a {
-
-    color: #0f4402;
+.marca-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    color: #173b24;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    
+}
 
+.icono-marca {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #b0efbb;
+    font-size: 24px;
+    border: 2px 4;
+    
+}
+
+
+
+.texto-marca {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.texto-marca strong {
+    font-size: 20px;
+    color: #1cdf6a;
+}
+
+.texto-marca small {
+    color: #0e721d;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.nav-enlaces {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-enlaces a {
+    padding: 16px 16px;
+    border-radius: 13px;
+    color: #0c0c0c;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-enlaces a:hover {
+    background-color: #f0f7ef;
+    color: #14532d;
+}
+
+.nav-enlaces a.nav-activo {
+    background-color: #e7f8e9;
+    color: #14532d;
+    font-weight: bold;
+}
+
+
+.nav-carrito:focus-visible,
+.nav-enlaces a:focus-visible,
+.marca-nav:focus-visible {
+    outline: 3px solid #35d64d;
+    outline-offset: 3px;
 }
 
 footer {
@@ -156,10 +234,5 @@ footer {
 .producto:hover {
 
     box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-}
-
-nav a:hover {
-    color: #8a5a20;
-    text-decoration: underline;
 }
 
