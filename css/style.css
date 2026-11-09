@@ -1,8 +1,6 @@
 /* ==================================================
    0. ESTILOS GENERALES DE LA PÁGINA
-   Configuración base del documento
 ================================================== */
-
 body {
     margin: 0;
     padding: 0;
@@ -14,11 +12,8 @@ body {
 
 /* ==================================================
    1. ENCABEZADO PRINCIPAL (HEADER)
-   Contiene el logo, el menú de navegación y las acciones
 ================================================== */
-
-/* Contenedor general del encabezado */
-.site-header {
+.categoria .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,22 +22,19 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-/* Nombre o título del logo */
-.logo-container h1 {
+.categoria .logo-container h1 {
     margin: 0;
     font-size: 24px;
     color: #D32F2F;
 }
 
-/* Texto descriptivo debajo del logo */
-.logo-container p {
+.categoria .logo-container p {
     margin: 0;
     font-size: 11px;
     color: #777;
 }
 
-/* Enlaces del menú de navegación */
-.main-nav a {
+.categoria .main-nav a {
     text-decoration: none;
     color: #4A5568;
     margin: 0 15px;
@@ -50,14 +42,12 @@ body {
     font-size: 15px;
 }
 
-/* Color de los enlaces activos y al pasar el cursor */
-.main-nav a.active,
-.main-nav a:hover {
+.categoria .main-nav a.active,
+.categoria .main-nav a:hover {
     color: #D32F2F;
 }
 
-/* Botones o iconos de acciones del encabezado */
-.header-actions {
+.categoria .header-actions {
     display: flex;
     gap: 20px;
     font-size: 18px;
@@ -67,11 +57,8 @@ body {
 
 /* ==================================================
    2. BANNER PRINCIPAL (HERO SECTION)
-   Presenta el mensaje principal, el botón y la imagen
 ================================================== */
-
-/* Contenedor del banner */
-.hero-section {
+.categoria .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,32 +68,27 @@ body {
     margin-bottom: 30px;
 }
 
-/* Contenedor del texto principal */
-.hero-content {
+.categoria .hero-content {
     max-width: 50%;
 }
 
-/* Título principal del banner */
-.hero-content h2 {
+.categoria .hero-content h2 {
     font-size: 42px;
     color: #1A202C;
     margin-bottom: 10px;
 }
 
-/* Palabra o frase destacada dentro del título */
-.hero-content h2 span {
+.categoria .hero-content h2 span {
     color: #D32F2F;
 }
 
-/* Texto descriptivo del banner */
-.hero-content p {
+.categoria .hero-content p {
     font-size: 18px;
     color: #4A5568;
     margin-bottom: 25px;
 }
 
-/* Botón principal del banner */
-.btn-hero {
+.categoria .btn-hero {
     display: inline-block;
     background-color: #E91E63;
     color: white;
@@ -118,13 +100,11 @@ body {
     transition: background 0.2s;
 }
 
-/* Efecto del botón principal al pasar el cursor */
-.btn-hero:hover {
+.categoria .btn-hero:hover {
     background-color: #C2185B;
 }
 
-/* Imagen ubicada en el banner principal */
-.hero-image img {
+.categoria .hero-image img {
     width: 400px;
     height: 250px;
     object-fit: cover;
@@ -135,11 +115,8 @@ body {
 
 /* ==================================================
    3. BARRA DE BENEFICIOS
-   Muestra las ventajas o servicios de la tienda
 ================================================== */
-
-/* Contenedor de todos los beneficios */
-.features-bar {
+.categoria .features-bar {
     display: flex;
     justify-content: space-around;
     background: #fff;
@@ -149,8 +126,7 @@ body {
     border: 1px solid #E2E8F0;
 }
 
-/* Elemento individual de la barra de beneficios */
-.feature-item {
+.categoria .feature-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -159,34 +135,28 @@ body {
     color: #4A5568;
 }
 
-/* Icono de cada beneficio */
-.feature-item i {
+.categoria .feature-item i {
     font-size: 22px;
 }
 
 
 /* ==================================================
    4. SECCIÓN DE CATEGORÍAS DE MASCOTAS
-   Contiene el título, el subtítulo y las tarjetas
 ================================================== */
-
-/* Contenedor general de la sección */
-.categorias-mascotas {
+.categoria .categorias-mascotas {
     max-width: 1200px;
     margin: 0 auto 50px auto;
     padding: 0 20px;
     text-align: left;
 }
 
-/* Título de la sección de categorías */
-.categorias-mascotas h2 {
+.categoria .categorias-mascotas h2 {
     font-size: 26px;
     color: #1A202C;
     margin-bottom: 5px;
 }
 
-/* Subtítulo descriptivo de las categorías */
-.categorias-mascotas .subtitulo {
+.categoria .categorias-mascotas .subtitulo {
     color: #718096;
     font-size: 14px;
     margin-bottom: 25px;
@@ -196,21 +166,15 @@ body {
 /* ==================================================
    5. DISTRIBUCIÓN Y ESTRUCTURA DE LAS TARJETAS
 ================================================== */
-
-/* Contenedor que organiza las tarjetas horizontalmente */
-.contenedor-tarjetas {
+.categoria .contenedor-tarjetas {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     align-items: stretch;
 }
 
-
-/* Estilos generales de cada tarjeta de categoría */
-
-.tarjeta-cat {
+.categoria .tarjeta-cat {
     display: flex;
-    
     flex-direction: column;
     min-width: 0;
     min-height: 40px;
@@ -221,7 +185,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.tarjeta-cat:hover {
+.categoria .tarjeta-cat:hover {
     transform: translateY(-5px);
 }
 
@@ -229,13 +193,10 @@ body {
 /* ==================================================
    6. IMÁGENES DE LAS TARJETAS DE CATEGORÍAS
 ================================================== */
-
-/* Tamaño, recorte y bordes de las imágenes */
-/* Imágenes de las tarjetas de mascotas */
-.tarjeta-cat img {
+.categoria .tarjeta-cat img {
     width: 100%;
     height: 150px;
-    object-fit: contain; /* Muestra la imagen completa sin recortarla */
+    object-fit: contain;
     object-position: center;
     border-radius: 12px;
     margin-bottom: 15px;
@@ -245,16 +206,13 @@ body {
 /* ==================================================
    7. TEXTOS DE LAS TARJETAS DE CATEGORÍAS
 ================================================== */
-
-/* Título de cada tarjeta */
-.tarjeta-cat h3 {
+.categoria .tarjeta-cat h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #1A202C;
 }
 
-/* Descripción de cada categoría */
-.tarjeta-cat p {
+.categoria .tarjeta-cat p {
     font-size: 13px;
     color: #4A5568;
     margin-bottom: 20px;
@@ -265,9 +223,7 @@ body {
 /* ==================================================
    8. BOTONES DE LAS TARJETAS DE CATEGORÍAS
 ================================================== */
-
-/* Estilos generales de los botones de categoría */
-.btn-cat {
+.categoria .btn-cat {
     display: inline-block;
     padding: 8px 20px;
     border-radius: 30px;
@@ -280,56 +236,261 @@ body {
 
 /* ==================================================
    9. COLORES PASTEL DE LAS CATEGORÍAS
-   Cada categoría tiene su propio color de fondo y botón
 ================================================== */
-
-/* Categoría de perros: amarillo pastel */
-.tarjeta-cat.perros {
+.categoria .tarjeta-cat.perros {
     background-color: #FFF2D6;
 }
 
-.tarjeta-cat.perros .btn-cat {
+.categoria .tarjeta-cat.perros .btn-cat {
     background-color: #FFC107;
     color: #333;
 }
 
-/* Categoría de gatos: morado pastel */
-.tarjeta-cat.gatos {
+.categoria .tarjeta-cat.gatos {
     background-color: #F3E8FF;
 }
 
-.tarjeta-cat.gatos .btn-cat {
+.categoria .tarjeta-cat.gatos .btn-cat {
     background-color: #A855F7;
     color: #FFF;
 }
 
-/* Categoría de otras mascotas: verde pastel */
-.tarjeta-cat.otras {
+.categoria .tarjeta-cat.otras {
     background-color: #DCFCE7;
 }
 
-.tarjeta-cat.otras .btn-cat {
+.categoria .tarjeta-cat.otras .btn-cat {
     background-color: #22C55E;
     color: #FFF;
 }
 
 
 /* ==================================================
-   10. IMAGEN O ICONO ADICIONAL DE PERRO
-   Elemento independiente identificado con la clase perro (huellita)
+   10. ICONOS Y AJUSTES DE IMÁGENES
 ================================================== */
-
-.perro {
+.categoria .perro {
     width: 30px;
     float: left;
 }
 
-/* Ajustar la posición de la imagen del gato */
-.tarjeta-cat.gatos img {
+.categoria .tarjeta-cat.gatos img {
     transform: translateY(20px);
 }
 
-/* Ajustar la posición de la imagen del hamster */
-.tarjeta-cat.otras img {
+.categoria .tarjeta-cat.otras img {
     transform: translateY(20px);
 }
+
+
+/* ==================================================
+   11. ENCABEZADO Y NAVEGACIÓN MODERNA
+================================================== */
+.categoria .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 45px;
+    padding: 0;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e5e9;
+}
+
+.categoria .nav-container {
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.categoria .logo {
+    grid-column: 1;
+    justify-self: start;
+    color: inherit;
+    text-decoration: none;
+}
+
+.categoria .brand-tagline {
+    display: block;
+    color: #7b8491;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.categoria .nav-links {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.categoria .nav-links a {
+    color: #252a30;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.categoria .nav-links a:hover,
+.categoria .nav-links a:focus-visible {
+    color: #14532d;
+}
+
+.categoria .nav-links a:focus-visible,
+.categoria .logo:focus-visible {
+    outline: 2px solid #35d64d;
+    outline-offset: 4px;
+}
+
+
+/* ==================================================
+   12. CATÁLOGO, BUSCADOR Y CONTENEDOR GENERAL
+================================================== */
+.categoria .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.categoria .main-container {
+    min-height: auto;
+    padding: 40px 24px;
+    background-color: #f8f9fb;
+}
+
+.categoria .catalog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 auto 28px;
+}
+
+.categoria .title-area h2 {
+    margin: 0;
+    color: #303946;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.categoria .title-area p {
+    margin: 4px 0 0;
+    color: #7b8491;
+    font-size: 16px;
+}
+
+.categoria .filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoria .filter-btn {
+    padding: 10px 22px;
+    border: 1px solid #d5dbe1;
+    border-radius: 24px;
+    background: #ffffff;
+    color: #20252b;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.categoria .filter-btn.active {
+    border-color: #2dcc50;
+    background: #2dcc50;
+    color: #ffffff;
+}
+
+
+/* ==================================================
+   13. PIE DE PÁGINA (BZOPETS FOOTER)
+================================================== */
+.categoria .footer {
+    width: 100%;
+    min-height: 250px;
+    background-color: #173D2B;
+    margin-top: 150px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.categoria .texto_foto_r { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.categoria .foto_left {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.categoria .titulo_3 {
+    display: flex;
+    flex-direction: column;           
+    line-height: 1.2;                
+}
+
+.categoria .letra_for {
+    color: rgb(243, 239, 239);
+    font-size: 35px;
+    text-align: left;
+    line-height: 34px;
+    white-space: pre;  
+}
+
+.categoria .letra_fur {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    color: white;
+    margin: 0;
+}
+
+.categoria .columnas_texto {
+    display: grid;
+    grid-template-rows: repeat(4, auto); 
+    grid-auto-flow: column;                
+    column-gap: 80px;
+    row-gap: 15px;
+    align-items: end;
+}
+
+.categoria .columnas_texto h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.categoria .columnas_texto p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.categoria .columnas_texto a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.categoria .columnas_texto a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+    .categoria .texto_foto_r {
+        flex-direction: column;

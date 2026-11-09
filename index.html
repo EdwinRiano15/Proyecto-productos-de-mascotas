@@ -7,44 +7,101 @@
     <!-- Enlace correcto a la hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="categoria">
 
-    <!-- Sección de Categorías -->
-    <section class="categorias-mascotas">
-        <img class="perro" src="https://i.pinimg.com/originals/61/40/39/61403969d75b744395a303cbf1833c83.png" alt="">
-        <h2>Nuestras categorías</h2>
-        <p class="subtitulo">Encuentra lo que tu mascota necesita</p>
-        
-        <div class="contenedor-tarjetas">
-            
-           <!-- Tarjeta 1: Perros -->
-<article class="tarjeta-cat perros">
-  <article class="tarjeta-cat perros">
-    <img src="https://png.pngtree.com/png-vector/20250805/ourmid/pngtree-golden-retriever-puppy-smiling-on-white-background-realistic-photo-png-image_16992961.webp" alt="Producto para perros">
-    <h3>Perros</h3>
-    <p>Alimentos, snacks, juguetes y accesorios ideales para consentir a tu cachorro.</p>
-</article>
-    <a href="#" class="btn-cat">Ver productos →</a>
-</article>
-
-            <!-- Tarjeta 2: Gatos -->
-            <article class="tarjeta-cat gatos">
-                <img src="https://artero.com/media/wysiwyg/gato-comun-europeo_2.png" alt="Productos para Gatos">
-                <h3>Gatos</h3>
-                <p>Rascadores, arena, concentrado premium y todo lo que tu gatito necesita.</p>
-                <a href="#" class="btn-cat">Ver productos →</a>
-            </article>
-
-            <!-- Tarjeta 3: Otras Mascotas -->
-            <article class="tarjeta-cat otras">
-                <img src="https://png.pngtree.com/png-clipart/20231028/original/pngtree-hamster-transparent-background-png-image_13446262.png" alt="Productos para otras mascotas">
-                <h3>Otras mascotas</h3>
-                <p>Hábitats, alimentos especiales para roedores y más.</p>
-                <a href="#" class="btn-cat">Ver productos →</a>
-            </article>
-
+    <!-- Header Estilo Tienda Moderna -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo" aria-label="Huellas Pet Shop, inicio">
+                <span class="brand-tagline">Todo para su felicidad</span>
+            </a>
+            <nav class="nav-links" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#content">Catálogo</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
         </div>
-    </section>
+    </header>
+
+    <!-- Contenedor General -->
+    <div class="contenedor">
+
+        <!-- Contenido Principal (Buscador y Encabezado de Catálogo) -->
+        <main id="inicio" class="main-container">
+
+            <!-- Título y Filtros Superiores -->
+            <div class="catalog-header">
+                <div class="title-area">
+                    <h2>Productos para su mascota</h2>
+                    <p>Productos seleccionados para su bienestar</p>
+                </div>
+                <!-- Filtros rápidos -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Sección de Categorías -->
+        <section class="categorias-mascotas" id="categorias">
+            <img class="perro" src="https://i.pinimg.com/originals/61/40/39/61403969d75b744395a303cbf1833c83.png" alt="">
+            <h2>Nuestras categorías</h2>
+            <p class="subtitulo">Encuentra lo que tu mascota necesita</p>
+            
+            <div class="contenedor-tarjetas">
+                
+                <!-- Tarjeta 1: Perros -->
+                <article class="tarjeta-cat perros">
+                    <img src="https://png.pngtree.com/png-vector/20250805/ourmid/pngtree-golden-retriever-puppy-smiling-on-white-background-realistic-photo-png-image_16992961.webp" alt="Producto para perros">
+                    <h3>Perros</h3>
+                    <p>Alimentos, snacks, juguetes y accesorios ideales para consentir a tu cachorro.</p>
+                    <a href="#" class="btn-cat">Ver productos →</a>
+                </article>
+
+                <!-- Tarjeta 2: Gatos -->
+                <article class="tarjeta-cat gatos">
+                    <img src="https://artero.com/media/wysiwyg/gato-comun-europeo_2.png" alt="Productos para Gatos">
+                    <h3>Gatos</h3>
+                    <p>Rascadores, arena, concentrado premium y todo lo que tu gatito necesita.</p>
+                    <a href="#" class="btn-cat">Ver productos →</a>
+                </article>
+
+                <!-- Tarjeta 3: Otras Mascotas -->
+                <article class="tarjeta-cat otras">
+                    <img src="https://png.pngtree.com/png-clipart/20231028/original/pngtree-hamster-transparent-background-png-image_13446262.png" alt="Productos para otras mascotas">
+                    <h3>Otras mascotas</h3>
+                    <p>Hábitats, alimentos especiales para roedores y más.</p>
+                    <a href="#" class="btn-cat">Ver productos →</a>
+                </article>
+
+            </div>
+        </section>
+
+    </div> <!-- Fin de .contenedor -->
+
+    <!-- Pie de página (Footer) con clases únicas e imagen conectada -->
+    <footer class="bzopets-footer-box">
+        <div class="bzopets-footer-flex-row">
+            <img src="images/piedepagina.jpeg" class="bzopets-footer-img-circle" alt="Logo Footer">
+            
+            <div class="bzopets-footer-titles-group">
+                <span class="bzopets-footer-main-title">Veterinary</span>
+                <span class="bzopets-footer-sub-title">Clinic</span>
+            </div>
+            
+            <div class="bzopets-footer-grid-columns">
+                <h1 style="color: white;">Navegacion</h1>
+                <p><a href="" style="color: white;">alimentos y accesorios</a></p>
+                <p><a href="" style="color: white;">mascotas</a></p>
+                <p><a href="" style="color: white;">Tarjetas de productos</a></p>
+                <h1 style="color: white;">Informacion</h1>
+                <p><a href="" style="color: white;">Horarios</a></p>
+                <p><a href="" style="color: white;">Shop now</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
-</html>
+</html>         
