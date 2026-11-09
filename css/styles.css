@@ -1,0 +1,391 @@
+/* ==========================================================
+   ESTILOS GENERALES (TEMA VERDE #35d64d Y BLANCO)
+   ========================================================== */
+:root {
+    --primary-green: #35d64d;
+    --primary-dark: #28a73a;
+    --primary-light: #f0fdf4;
+    --text-dark: #2d3748;
+    --text-muted: #718096;
+    --bg-main: #f8fafc;
+    --white: #ffffff;
+    --shadow: 0 4px 12px rgba(53, 214, 77, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.alimento-accesorio body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+}
+
+/* ==========================================================
+   NAVBAR
+   ========================================================== */
+.alimento-accesorio .navbar {
+    background-color: var(--white);
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.alimento-accesorionav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alimento-accesoriologo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.alimento-accesorioogo-icon {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+}
+
+.alimento-accesorio.brand-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.alimento-accesorio.brand-tagline {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.alimento-accesorio.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.alimento-accesorio.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.alimento-accesorio nav-links a:hover {
+    color: var(--primary-green);
+}
+
+.alimento-accesorio nav-actions {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.alimento-accesorio icon-btn, .cart-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--text-dark);
+    padding: 0.4rem;
+    position: relative;
+}
+
+.alimento-accesorio cart-btn {
+    background: var(--primary-light);
+    color: var(--primary-green);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alimento-accesorio cart-btn .badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: var(--primary-green);
+    color: white;
+    font-size: 0.65rem;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+/* ==========================================================
+   CONTENEDOR PRINCIPAL Y CABECERA DE CATÁLOGO
+   ========================================================== */
+.alimento-accesorio main-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.alimento-accesorio catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.alimento-accesorio title-area h2 {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+.alimento-accesorio title-area p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Botones de filtro rápido */
+.alimento-accesorio filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.alimento-accesorio filter-btn {
+    background: var(--white);
+    border: 1px solid #cbd5e1;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.alimento-accesorio filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-green);
+    color: white;
+    border-color: var(--primary-green);
+}
+
+/* Barra de búsqueda */
+.alimento-accesorios earch-bar-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.alimento-accesorio search-bar-container i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.alimento-accesorio search-bar-container input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: var(--white);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.alimento-accesorio search-bar-container input:focus {
+    border-color: var(--primary-green);
+}
+
+/* ==========================================================
+   SECCIONES Y TARJETAS DE PRODUCTOS
+   ========================================================== */
+.section-group {
+    margin-bottom: 2.5rem;
+}
+
+.alimento-accesorio category-heading {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 0.4rem;
+}
+
+.alimento-accesorio product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjeta individual */
+.alimento-accesorio product-card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alimento-accesorioproduct-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(53, 214, 77, 0.15);
+}
+
+.alimento-accesorio card-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f1f5f9;
+    margin-bottom: 0.8rem;
+}
+
+.alimento-accesorio card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.alimento-accesorio product-card h4 {
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.alimento-accesoriosubtext {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+}
+
+.alimento-accesorio price {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Botón de compra unificado al verde #35d64d */
+.alimento-accesorio btn-cart {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 0.6rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    transition: background-color 0.2s;
+}
+
+.alimento-accesorio btn-cart:hover {
+    background-color: var(--primary-dark);
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+.alimento-accesorio footer {
+    background: var(--white);    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 3rem;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.alimento-accesorio footer{
+  width: 100%;
+  height: 250px;
+  background-color: #173D2B;
+  margin-top: 150px;
+}                                                                                                                                                                                                                                        .titulo_3{
+  display: flex;
+  flex-direction: column;          
+  line-height: 1.2;                
+}
+.alimento-accesorio letra_for{
+  color: rgb(243, 239, 239);
+  font-size: 35px;
+  text-align: left;
+  padding-left: 10%;
+  line-height: 34px;
+  white-space: pre;  
+}
+.alimento-accesorioletra_fur{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 26px;
+  padding-left: 12PX;
+  color: white;
+}
+.alimento-accesorio letra_fur p{
+  margin: 0;
+}
+.alimento-accesorio texto_foto_r{ 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+}                                                                                                                                                                                                                                           .columnas_texto {
+  display: grid;
+  grid-template-rows: repeat(4, auto); 
+  grid-auto-flow: column;                
+  column-gap: 150px;
+  row-gap: 25px;
+  align-items: right;
+  padding-left: 350px;
+}
+.alimento-accesoriocolumnas_texto p {
+  margin: 0;
+  font-size: 15px;
+  color: #f6f6f6;
+}
+.alimento-accesoriocolumnas_texto h1 {
+  margin: 0;
+  font-size: 25px;
+  color: #f6f6f6;
+}
+
+.alimento-accesoriofoto_left{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 50px;
+}
