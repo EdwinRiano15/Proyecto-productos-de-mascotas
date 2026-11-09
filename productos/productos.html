@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos para tu mascota | Huellas Pet Shop</title>
     <link rel="stylesheet" href="estiloproductos.css">
 
 </head>
-<body>
+<body class="pagina-catalogo-mascotas">
+
     <div class="contenedor"> </div>
-    <header class="encabezado">
-        <nav class="nav-principal" aria-label="Navegación principal">
-            <a class="marca-nav" href="../index.html#inicio" aria-label="Huellas Pet Shop, inicio">
-                <span class="icono-marca" aria-hidden="true">  </span>
-                <span class="texto-marca"><strong>Productos para tu mascotas</strong><small>Tarjeta de prodcutos </small></span>
+  <!-- Header Estilo Tienda Moderna -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo" aria-label="Huellas Pet Shop, inicio">
+                <span class="brand-tagline">Todo para su felicidad</span>
             </a>
-
-            <div class="nav-enlaces">
-                <a href="../index.html#inicio">Inicio</a>
-                <a href="../index.html#catalogo">Catálogo</a>
-                <a href="../index.html#categorias">Categorías</a>
-                <a class="nav-activo" href="#content" aria-current="page">Tarjeta de productos</a>
-                <a href="../index.html#horarios-ubicacion">Horarios y ubicación</a>
-            </div>
-
-           
-        </nav>
-
+            <nav class="nav-links" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#content">Catálogo</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
+
+    <!-- Contenido Principal -->
+    <main id="inicio" class="main-container">
+
+        <!-- Título y Filtros Superiores -->
+        <div class="catalog-header">
+            <div class="title-area">
+                <h2>Productos para su mascota</h2>
+                <p>Productos seleccionados para su bienestar</p>
+            </div>
+            <!-- Filtros rápidos -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+               
+            </div>
+        </div>
+
+        <!-- Buscador -->
+        <div class="search-bar-container">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input id="buscador-productos" type="search" placeholder="Buscar productos para tu mascota..." aria-label="Buscar productos para tu mascota" autocomplete="off">
+        </div>
 
 
     <section id="content"> 
@@ -97,14 +115,59 @@
 
 
 
+            <p id="sin-resultados" class="sin-resultados" hidden>No encontramos productos con esa búsqueda.</p>
     </section>
 
     <footer id="footer"> 
 
-        <p>© 2026 Huellas Pet Shop</p>
+      <div class="footer">
+          <div class="texto_foto_r">
+             <img src="imagenes/footer.png"  class="foto_left"   alt="Usabilidad" >
+             <div class="titulo_3">
+                <span class="letra_for">Veterinary</span>
+                <span class="letra_fur">Clinic</span>
+             </div>
+               <div class="columnas_texto">
+                  <h1 style="color: white;">Navegacion</h1>
+                  <p><a href="" style="color: white;">alimentos y accesorios</a></p>
+                  <p><a href="" style="color: white;">mascotas</a></p>
+                  <p><a href="" style="color: white;">Tarjetas de productos</a></p>
+                  <h1 style="color: white;">Informacion</h1>
+                  <p><a href="" style="color: white;">Horarios</a></p>
+                  <p><a href=""style="color: white;">Shop now</a></p>
+               </div>
+            </div>
+      </div>
+  </div>
 
     </footer>
 
 
+    <script>
+    const buscador = document.getElementById("buscador-productos");
+    const productos = [...document.querySelectorAll("#content .producto")];
+    const mensajeSinResultados = document.getElementById("sin-resultados");
+
+    const normalizarTexto = (texto) => texto
+        .toLocaleLowerCase("es")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+    buscador.addEventListener("input", () => {
+        const consulta = normalizarTexto(buscador.value.trim());
+        let productosVisibles = 0;
+
+        productos.forEach((producto) => {
+            const textoProducto = normalizarTexto(
+                `${producto.innerText} ${producto.querySelector("img")?.alt || ""}`
+            );
+            const coincide = textoProducto.includes(consulta);
+            producto.hidden = !coincide;
+            if (coincide) productosVisibles += 1;
+        });
+
+        mensajeSinResultados.hidden = productosVisibles > 0;
+    });
+</script>
 </body>
 </html>
