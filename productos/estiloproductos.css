@@ -1,0 +1,529 @@
+body.pagina-catalogo-mascotas, body.pagina-catalogo-mascotas * {
+
+    box-sizing: border-box;
+
+}
+body.pagina-catalogo-mascotas {
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cbeeb4;
+    color: #252525;
+
+
+}
+.pagina-catalogo-mascotas .contenedor {
+
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+.pagina-catalogo-mascotas #content {
+    display: grid;
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 32px 0;
+
+
+}
+.pagina-catalogo-mascotas .producto {
+
+    background-color: rgb(248, 250, 247);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.pagina-catalogo-mascotas .producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #e3e9df;
+
+}
+.pagina-catalogo-mascotas .producto-ilustracion {
+  width: 100%;
+  height: 220px;
+  display: grid;
+  place-items: center;
+  background-color: #e5f8e8;
+  border-radius: 10px;
+  border: 1px solid #35d64d;
+  font-size: 88px;
+
+}
+.pagina-catalogo-mascotas .producto h2 {
+    margin: 12px 0 8px;
+    font-size: 18px;
+
+}
+.pagina-catalogo-mascotas .precio {
+
+    color: #5b8c35;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0 0;
+
+
+}
+.pagina-catalogo-mascotas .btn-carrito {
+    width: 100%;
+    margin-top: auto;
+    padding: 11px 10px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #14532d;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+}
+.pagina-catalogo-mascotas .btn-carrito:hover {
+    background-color: #0f3f22;
+    transform: translateY(-2px);
+
+}
+.pagina-catalogo-mascotas .btn-carrito:focus-visible {
+    outline: 3px solid #35d64d;
+    outline-offset: 3px;
+
+}
+.pagina-catalogo-mascotas header {
+
+    padding: 128px 0 32px;
+    text-align: center;
+    background-color: #35d64d;
+    
+
+
+}
+.pagina-catalogo-mascotas header h1 {
+    margin: 0 ;
+    color: #fafbfa;
+    font-size: 32px;
+    font-size: 60px;
+    
+
+
+}
+.pagina-catalogo-mascotas header p {
+
+    margin: 8px 0 0;
+    color: #f9f8f8;
+    font-size: 30px;
+
+}
+.pagina-catalogo-mascotas .icono-marca {
+
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #b0efbb;
+    font-size: 24px;
+    border: 2px 4;
+    
+
+}
+.pagina-catalogo-mascotas .texto-marca {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+.pagina-catalogo-mascotas .texto-marca strong {
+    font-size: 20px;
+    color: #1cdf6a;
+
+}
+.pagina-catalogo-mascotas .texto-marca small {
+    color: #0e721d;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+}
+.pagina-catalogo-mascotas /* pasar el cursor */
+
+.producto:hover {
+
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+
+}
+.pagina-catalogo-mascotas /* Encabezado y navegación con el diseño de referencia */
+.navbar {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 45px;
+    padding: 0;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e5e9;
+
+}
+.pagina-catalogo-mascotas .nav-container {
+
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+}
+.pagina-catalogo-mascotas .logo {
+
+    grid-column: 1;
+    justify-self: start;
+    color: inherit;
+    text-decoration: none;
+
+}
+.pagina-catalogo-mascotas .brand-tagline {
+
+    display: block;
+    color: #7b8491;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.pagina-catalogo-mascotas .nav-links {
+
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+
+}
+.pagina-catalogo-mascotas .nav-links a {
+
+    color: #252a30;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+}
+.pagina-catalogo-mascotas .nav-links a:hover, .pagina-catalogo-mascotas .nav-links a:focus-visible {
+    color: #14532d;
+
+}
+.pagina-catalogo-mascotas .nav-links a:focus-visible, .pagina-catalogo-mascotas .logo:focus-visible {
+
+    outline: 2px solid #35d64d;
+    outline-offset: 4px;
+
+}
+
+
+@media (max-width: 640px) {
+.pagina-catalogo-mascotas .nav-container {
+
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 12px 16px;
+    
+}
+.pagina-catalogo-mascotas .logo, .pagina-catalogo-mascotas .nav-links {
+
+        grid-column: 1;
+        justify-self: center;
+    
+}
+.pagina-catalogo-mascotas .nav-links {
+
+        flex-wrap: wrap;
+        gap: 10px 22px;
+    
+}
+.pagina-catalogo-mascotas .nav-links a {
+
+        font-size: 16px;
+    
+}
+
+
+}
+.pagina-catalogo-mascotas /* Catálogo y buscador */
+.main-container {
+
+    min-height: 75vh;
+    padding: 40px 24px 0;
+    background-color: #f8f9fb;
+
+}
+.pagina-catalogo-mascotas .catalog-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 auto 28px;
+
+}
+.pagina-catalogo-mascotas .title-area h2 {
+
+    margin: 0;
+    color: #303946;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.pagina-catalogo-mascotas .title-area p {
+
+    margin: 4px 0 0;
+    color: #7b8491;
+    font-size: 16px;
+
+}
+.pagina-catalogo-mascotas .filter-buttons {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.pagina-catalogo-mascotas .filter-btn {
+
+    padding: 10px 22px;
+    border: 1px solid #d5dbe1;
+    border-radius: 24px;
+    background: #ffffff;
+    color: #20252b;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.pagina-catalogo-mascotas .filter-btn.active {
+
+    border-color: #2dcc50;
+    background: #2dcc50;
+    color: #ffffff;
+
+}
+.pagina-catalogo-mascotas .search-bar-container {
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto 28px;
+    padding: 0 20px;
+    border: 1px solid #d5dbe1;
+    border-radius: 16px;
+    background: #ffffff;
+
+}
+.pagina-catalogo-mascotas .search-icon {
+
+    position: relative;
+    display: inline-block;
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+
+}
+.pagina-catalogo-mascotas .search-icon::before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #7b8491;
+    border-radius: 50%;
+    content: "";
+
+}
+.pagina-catalogo-mascotas .search-icon::after {
+
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    width: 7px;
+    height: 2px;
+    background: #7b8491;
+    content: "";
+    transform: rotate(45deg);
+    transform-origin: right center;
+
+}
+.pagina-catalogo-mascotas .search-bar-container input {
+
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #252a30;
+    font: inherit;
+    font-size: 18px;
+
+}
+.pagina-catalogo-mascotas .search-bar-container input::placeholder {
+
+    color: #7b8491;
+    opacity: 1;
+
+}
+.pagina-catalogo-mascotas .search-bar-container:focus-within {
+
+    border-color: #aab4bf;
+
+}
+.pagina-catalogo-mascotas #content {
+
+    width: 100%;
+
+}
+.pagina-catalogo-mascotas .producto[hidden] {
+
+    display: none;
+
+}
+.pagina-catalogo-mascotas .sin-resultados {
+
+    margin: 0;
+    padding: 24px 0;
+    color: #7b8491;
+    text-align: center;
+
+}
+
+
+@media (max-width: 760px) {
+.pagina-catalogo-mascotas .main-container {
+
+        padding: 28px 16px 0;
+    
+}
+.pagina-catalogo-mascotas .catalog-header {
+
+        align-items: flex-start;
+        flex-direction: column;
+    
+}
+.pagina-catalogo-mascotas .title-area h2 {
+
+        font-size: 26px;
+    
+}
+.pagina-catalogo-mascotas .filter-buttons {
+
+        flex-wrap: wrap;
+    
+}
+
+
+}
+.pagina-catalogo-mascotas /* footer */ 
+
+.footer {
+
+  width: 100%;
+  height: 250px;
+  background-color: #173D2B;
+  margin-top: 150px;
+   text-align: center;
+    color: #000000;
+    border-top: 1px solid #464746;
+
+}
+.pagina-catalogo-mascotas .titulo_3 {
+
+  display: flex;
+  flex-direction: column;          
+  line-height: 1.2;                
+
+}
+.pagina-catalogo-mascotas .letra_for {
+
+  color: rgb(243, 239, 239);
+  font-size: 35px;
+  text-align: left;
+  padding-left: 10%;
+  line-height: 34px;
+  white-space: pre;  
+
+}
+.pagina-catalogo-mascotas .letra_fur {
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 26px;
+  padding-left: 12PX;
+  color: white;
+
+}
+.pagina-catalogo-mascotas .letra_fur p {
+
+  margin: 0;
+
+}
+.pagina-catalogo-mascotas .texto_foto_r {
+ 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+
+}
+.pagina-catalogo-mascotas .columnas_texto {
+
+  display: grid;
+  grid-template-rows: repeat(4, auto); 
+  grid-auto-flow: column;                
+  column-gap: 150px;
+  row-gap: 25px;
+  align-items: right;
+  padding-left: 350px;
+
+}
+.pagina-catalogo-mascotas .columnas_texto p {
+
+  margin: 0;
+  font-size: 15px;
+  color: #f6f6f6;
+
+}
+.pagina-catalogo-mascotas .columnas_texto h1 {
+
+  margin: 0;
+  font-size: 25px;
+  color: #f6f6f6;
+
+}
+.pagina-catalogo-mascotas .foto_left {
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 50px;
+
+}

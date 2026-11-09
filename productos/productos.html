@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos para tu mascota | Huellas Pet Shop</title>
+    <link rel="stylesheet" href="estiloproductos.css">
+
+</head>
+<body class="pagina-catalogo-mascotas">
+
+    <div class="contenedor"> </div>
+  <!-- Header Estilo Tienda Moderna -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo" aria-label="Huellas Pet Shop, inicio">
+                <span class="brand-tagline">Todo para su felicidad</span>
+            </a>
+            <nav class="nav-links" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#content">Catálogo</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main id="inicio" class="main-container">
+
+        <!-- Título y Filtros Superiores -->
+        <div class="catalog-header">
+            <div class="title-area">
+                <h2>Productos para su mascota</h2>
+                <p>Productos seleccionados para su bienestar</p>
+            </div>
+            <!-- Filtros rápidos -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+               
+            </div>
+        </div>
+
+        <!-- Buscador -->
+        <div class="search-bar-container">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input id="buscador-productos" type="search" placeholder="Buscar productos para tu mascota..." aria-label="Buscar productos para tu mascota" autocomplete="off">
+        </div>
+
+
+    <section id="content"> 
+
+        <article class="producto">
+            <img src="imagenes/producto1.png" alt="producto para mascotas">
+            <h2>Galleta para perros</h2>
+            <p class="precio">$25.000</p>
+            <button class="btn-carrito" type="button">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+  <img src="imagenes/producto2.png" alt="Juguete para gato">
+  <h2>Suplemento para gato </h2>
+  <p class="precio">$12.000</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/producto3.png" alt="Cama para mascota">
+  <h2>Cama para mascota</h2>
+  <p class="precio">$80.000</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/producto4.png" alt="Pelota para perro">
+  <h2>Pelota para perro</h2>
+  <p class="precio">$8.000</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/producto5.png" alt="Rascador para gato">
+  <h2>Rascador para gato</h2>
+  <p class="precio">$55.000</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/producto6.png" alt="Plato para mascota">
+  <h2>Plato para mascota</h2>
+  <p class="precio">$15.000$</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/perro.png" alt="Correo para perro">
+  <h2>Correa para mascotas</h2>
+  <p class="precio">$25.000$</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/cepillo.png" alt="Cepillo para mascota">
+  <h2>Cepillo para mascota</h2>
+  <p class="precio">$35.000$</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+<article class="producto">
+  <img src="imagenes/hamster.png" alt="Comida para hamster">
+  <h2>Comida para hamster</h2>
+  <p class="precio">$35.000$</p>
+  <button class="btn-carrito" type="button">Añadir al carrito</button>
+</article>
+
+
+
+            <p id="sin-resultados" class="sin-resultados" hidden>No encontramos productos con esa búsqueda.</p>
+    </section>
+
+    <footer id="footer"> 
+
+      <div class="footer">
+          <div class="texto_foto_r">
+             <img src="imagenes/footer.png"  class="foto_left"   alt="Usabilidad" >
+             <div class="titulo_3">
+                <span class="letra_for">Veterinary</span>
+                <span class="letra_fur">Clinic</span>
+             </div>
+               <div class="columnas_texto">
+                  <h1 style="color: white;">Navegacion</h1>
+                  <p><a href="" style="color: white;">alimentos y accesorios</a></p>
+                  <p><a href="" style="color: white;">mascotas</a></p>
+                  <p><a href="" style="color: white;">Tarjetas de productos</a></p>
+                  <h1 style="color: white;">Informacion</h1>
+                  <p><a href="" style="color: white;">Horarios</a></p>
+                  <p><a href=""style="color: white;">Shop now</a></p>
+               </div>
+            </div>
+      </div>
+  </div>
+
+    </footer>
+
+
+    <script>
+    const buscador = document.getElementById("buscador-productos");
+    const productos = [...document.querySelectorAll("#content .producto")];
+    const mensajeSinResultados = document.getElementById("sin-resultados");
+
+    const normalizarTexto = (texto) => texto
+        .toLocaleLowerCase("es")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+    buscador.addEventListener("input", () => {
+        const consulta = normalizarTexto(buscador.value.trim());
+        let productosVisibles = 0;
+
+        productos.forEach((producto) => {
+            const textoProducto = normalizarTexto(
+                `${producto.innerText} ${producto.querySelector("img")?.alt || ""}`
+            );
+            const coincide = textoProducto.includes(consulta);
+            producto.hidden = !coincide;
+            if (coincide) productosVisibles += 1;
+        });
+
+        mensajeSinResultados.hidden = productosVisibles > 0;
+    });
+</script>
+</body>
+</html>
