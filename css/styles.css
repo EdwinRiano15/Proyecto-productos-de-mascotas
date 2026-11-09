@@ -1,4 +1,4 @@
- /* ==========================================================
+/* ==========================================================
    ESTILOS GENERALES (TEMA VERDE #35d64d Y BLANCO)
    ========================================================== */
 :root {
@@ -19,7 +19,7 @@
     font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-body {
+.alimento-accesorio body {
     background-color: var(--bg-main);
     color: var(--text-dark);
 }
@@ -27,7 +27,7 @@ body {
 /* ==========================================================
    NAVBAR
    ========================================================== */
-.navbar {
+.alimento-accesorio .navbar {
     background-color: var(--white);
     border-bottom: 1px solid #e2e8f0;
     position: sticky;
@@ -35,7 +35,7 @@ body {
     z-index: 100;
 }
 
-.nav-container {
+.alimento-accesorionav-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.8rem 1.5rem;
@@ -44,36 +44,36 @@ body {
     align-items: center;
 }
 
-.logo {
+.alimento-accesoriologo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
 }
 
-.logo-icon {
+.alimento-accesorioogo-icon {
     font-size: 1.8rem;
     color: var(--primary-green);
 }
 
-.brand-name {
+.alimento-accesorio.brand-name {
     font-size: 1.25rem;
     font-weight: 800;
     color: var(--text-dark);
 }
 
-.brand-tagline {
+.alimento-accesorio.brand-tagline {
     display: block;
     font-size: 0.7rem;
     color: var(--text-muted);
 }
 
-.nav-links {
+.alimento-accesorio.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-.nav-links a {
+.alimento-accesorio.nav-links a {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
@@ -81,17 +81,17 @@ body {
     transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.alimento-accesorio nav-links a:hover {
     color: var(--primary-green);
 }
 
-.nav-actions {
+.alimento-accesorio nav-actions {
     display: flex;
     gap: 0.8rem;
     align-items: center;
 }
 
-.icon-btn, .cart-btn {
+.alimento-accesorio icon-btn, .cart-btn {
     background: transparent;
     border: none;
     font-size: 1.1rem;
@@ -101,7 +101,7 @@ body {
     position: relative;
 }
 
-.cart-btn {
+.alimento-accesorio cart-btn {
     background: var(--primary-light);
     color: var(--primary-green);
     width: 38px;
@@ -112,7 +112,7 @@ body {
     justify-content: center;
 }
 
-.cart-btn .badge {
+.alimento-accesorio cart-btn .badge {
     position: absolute;
     top: -2px;
     right: -2px;
@@ -126,13 +126,13 @@ body {
 /* ==========================================================
    CONTENEDOR PRINCIPAL Y CABECERA DE CATÁLOGO
    ========================================================== */
-.main-container {
+.alimento-accesorio main-container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
 
-.catalog-header {
+.alimento-accesorio catalog-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,24 +141,24 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.title-area h2 {
+.alimento-accesorio title-area h2 {
     font-size: 1.6rem;
     color: var(--text-dark);
     font-weight: 800;
 }
 
-.title-area p {
+.alimento-accesorio title-area p {
     font-size: 0.9rem;
     color: var(--text-muted);
 }
 
 /* Botones de filtro rápido */
-.filter-buttons {
+.alimento-accesorio filter-buttons {
     display: flex;
     gap: 0.5rem;
 }
 
-.filter-btn {
+.alimento-accesorio filter-btn {
     background: var(--white);
     border: 1px solid #cbd5e1;
     padding: 0.4rem 1.2rem;
@@ -169,19 +169,19 @@ body {
     transition: all 0.2s;
 }
 
-.filter-btn.active, .filter-btn:hover {
+.alimento-accesorio filter-btn.active, .filter-btn:hover {
     background-color: var(--primary-green);
     color: white;
     border-color: var(--primary-green);
 }
 
 /* Barra de búsqueda */
-.search-bar-container {
+.alimento-accesorios earch-bar-container {
     position: relative;
     margin-bottom: 2rem;
 }
 
-.search-bar-container i {
+.alimento-accesorio search-bar-container i {
     position: absolute;
     left: 1rem;
     top: 50%;
@@ -189,7 +189,7 @@ body {
     color: var(--text-muted);
 }
 
-.search-bar-container input {
+.alimento-accesorio search-bar-container input {
     width: 100%;
     padding: 0.8rem 1rem 0.8rem 2.8rem;
     border: 1px solid #cbd5e1;
@@ -200,7 +200,7 @@ body {
     transition: border-color 0.2s;
 }
 
-.search-bar-container input:focus {
+.alimento-accesorio search-bar-container input:focus {
     border-color: var(--primary-green);
 }
 
@@ -211,7 +211,7 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.category-heading {
+.alimento-accesorio category-heading {
     font-size: 1.3rem;
     color: var(--primary-green);
     margin-bottom: 1rem;
@@ -222,14 +222,14 @@ body {
     padding-bottom: 0.4rem;
 }
 
-.product-grid {
+.alimento-accesorio product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
 /* Tarjeta individual */
-.product-card {
+.alimento-accesorio product-card {
     background: var(--white);
     border: 1px solid #e2e8f0;
     border-radius: 16px;
@@ -241,12 +241,12 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.product-card:hover {
+.alimento-accesorioproduct-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(53, 214, 77, 0.15);
 }
 
-.card-img {
+.alimento-accesorio card-img {
     width: 100%;
     height: 150px;
     border-radius: 10px;
@@ -255,26 +255,26 @@ body {
     margin-bottom: 0.8rem;
 }
 
-.card-img img {
+.alimento-accesorio card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.product-card h4 {
+.alimento-accesorio product-card h4 {
     font-size: 1rem;
     color: var(--text-dark);
     font-weight: 700;
     margin-bottom: 0.2rem;
 }
 
-.subtext {
+.alimento-accesoriosubtext {
     font-size: 0.8rem;
     color: var(--text-muted);
     margin-bottom: 0.8rem;
 }
 
-.price {
+.alimento-accesorio price {
     font-size: 1.15rem;
     font-weight: 800;
     color: var(--text-dark);
@@ -282,7 +282,7 @@ body {
 }
 
 /* Botón de compra unificado al verde #35d64d */
-.btn-cart {
+.alimento-accesorio btn-cart {
     background-color: var(--primary-green);
     color: var(--white);
     border: none;
@@ -298,16 +298,15 @@ body {
     transition: background-color 0.2s;
 }
 
-.btn-cart:hover {
+.alimento-accesorio btn-cart:hover {
     background-color: var(--primary-dark);
 }
 
 /* ==========================================================
    FOOTER
    ========================================================== */
-.footer {
-    background: var(--white);
-    border-top: 1px solid #e2e8f0;
+.alimento-accesorio footer {
+    background: var(--white);    border-top: 1px solid #e2e8f0;
     text-align: center;
     padding: 1.5rem;
     color: var(--text-muted);
@@ -326,4 +325,67 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+
+.alimento-accesorio footer{
+  width: 100%;
+  height: 250px;
+  background-color: #173D2B;
+  margin-top: 150px;
+}                                                                                                                                                                                                                                        .titulo_3{
+  display: flex;
+  flex-direction: column;          
+  line-height: 1.2;                
+}
+.alimento-accesorio letra_for{
+  color: rgb(243, 239, 239);
+  font-size: 35px;
+  text-align: left;
+  padding-left: 10%;
+  line-height: 34px;
+  white-space: pre;  
+}
+.alimento-accesorioletra_fur{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 26px;
+  padding-left: 12PX;
+  color: white;
+}
+.alimento-accesorio letra_fur p{
+  margin: 0;
+}
+.alimento-accesorio texto_foto_r{ 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+}                                                                                                                                                                                                                                           .columnas_texto {
+  display: grid;
+  grid-template-rows: repeat(4, auto); 
+  grid-auto-flow: column;                
+  column-gap: 150px;
+  row-gap: 25px;
+  align-items: right;
+  padding-left: 350px;
+}
+.alimento-accesoriocolumnas_texto p {
+  margin: 0;
+  font-size: 15px;
+  color: #f6f6f6;
+}
+.alimento-accesoriocolumnas_texto h1 {
+  margin: 0;
+  font-size: 25px;
+  color: #f6f6f6;
+}
+
+.alimento-accesoriofoto_left{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 50px;
 }
