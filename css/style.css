@@ -1,5 +1,6 @@
-.fondo_1{
-    width: 98%;
+/* parte plantilla principla jorge inicio*/
+.principal_fondo_1{                                                           
+    width: 100%;
     height: 60px;
     background-color: rgb(217, 217, 217);
     border: 2px solid rgb(217, 217, 217);
@@ -10,20 +11,20 @@
     align-items: center; 
 }
 .body{
-    border: white;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.foto{
+.principal_foto{
    width: 70px;
    height: 70px;
    border-radius: 60%;
    object-fit: cover;
    margin-left:  124px;
 }
-.letra_1{
+.principal_letra_1{
     color: black;
     font-size: 16px;
     text-align: left;
@@ -31,16 +32,16 @@
     line-height: 34px;
     white-space: pre;  
 }
-.letra_2{
+.principal_letra_2{
     display: flex;
     align-items: center;
     gap: 20px;
     padding-left: 160px;
 }
-.letra_2 p{
+.principal_letra_2 p{
   margin: 0;
 }
-.barra{
+.principal_barra{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -49,13 +50,13 @@
     box-sizing: border-box;
     padding: 10%;
 }
-.opciones{
+.principal_opciones{
     width: fit-content;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     font-size: 14px;
 }
-.opciones summary {
+.principal_opciones summary {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,21 +67,21 @@
   cursor: pointer;
   list-style: none;
 }
-.opciones summary::-webkit-details-marker {
+.principal_opciones summary::-webkit-details-marker {
   display: none;
 }
 
-.opciones summary::after {
+.principal_opciones summary::after {
   content: "▼";
   font-size: 10px;
   transition: transform 0.3s;
 }
 
-.opciones[open] summary::after {
+.principal_opciones[open] summary::after {
   transform: rotate(180deg);
 }
 
-.opciones ul {
+.principal_opciones ul {
   position: absolute;              
   top: 100%;                       
   left: 0;
@@ -94,18 +95,16 @@
   z-index: 10;                     
   box-sizing: border-box;
 }
-
-.opciones li {
+.principal_opciones li {
   padding:  14px;
   cursor: pointer;
   white-space: nowrap;
 }
-
-.opciones li:hover {
+.principal_opciones li:hover {
   background-color: #f5f5f5;
 }
-.fondo_2{
-    width: 98%;
+.principal_fondo_2{
+    width: 100%;
     height: 100px;
     background-color: rgb(249, 249, 249);
     box-sizing: border-box;        
@@ -114,7 +113,7 @@
     justify-content: space-between; 
     align-items: center; 
 }
-.texto_foto{
+.principal_texto_foto{
     display: flex;
     align-items: center;
     gap: 12px;
@@ -125,39 +124,39 @@
    object-fit: cover;
    flex-shrink: 0;
 }
-.fondo_2 p{
+.principal_fondo_2 p{
    margin: 0;
 }
-.titulo {
+.principal_titulo {
    display: flex;
    flex-direction: column;          
    line-height: 1.2;                
 }
-.linea1 {
+.principal_linea1 {
    font-size: 20px;
    font-weight: bold;
 }
-.linea2 {
+.principal_linea2 {
    font-size: 13px;
    color: gray;
 }
-.center{
+.principal_center{
     align-items: center;
     padding-left: 150px;
     white-space: pre;
 }
-.meny{
+.principal_meny{
     align-items: center;
     padding-left: 10px;
 }
-.nav{
+.principal_nav{
     border: white;
     background-color:rgb(217, 217, 217);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.lista{
+.principal_lista{
   display: flex;              
   flex-direction: row;        
   flex-wrap: nowrap;          
@@ -166,15 +165,15 @@
   margin: 0;                  
   padding-left: 120px;                 
 }
-.lista li {
+.principal_lista li {
   cursor: pointer;
 }
-.buscador {
+.principal_buscador {
   position: relative;           
   width: 250px;
   padding-left: 260px;
 }
-.buscador input {
+.principal_buscador input {
   width: 100%;
   box-sizing: border-box;
   padding: 8px 40px 8px 14px;    
@@ -184,11 +183,10 @@
   outline: none;
 }
 
-.buscador input:focus {
+.principal_buscador input:focus {
   border-color: #e67e22;
 }
-
-.buscador button {
+.principal_buscador button {
   position: absolute;
   right: 6px;                   
   top: 50%;
@@ -199,15 +197,14 @@
   font-size: 16px;
   cursor: pointer;
 }
-
-.buscador button:hover {
+.principal_buscador button:hover {
   opacity: 0.7;
 }
-.imagen{
+.principal_imagen{
   padding: 12px;
 }
-.fondo_3{
-  width: 98%;
+.principal_fondo_3{
+  width: 100%;
   height: 600px;
   background-image: url("../images/Perro\ y\ gato\ sobre\ fondo\ verde\ vibrante.png");
   background-size: 100% auto;
@@ -221,7 +218,7 @@
   box-sizing: border-box;
   padding-bottom: 300px;
 }
-.titulo_2 {
+.principal_titulo_2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,38 +226,38 @@
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 460px;
 }
-.titulo_2 p {
+.principal_titulo_2 p {
   margin: 0;
 }
-.titulo_2 .parrafo_1{
+.principal_titulo_2 .parrafo_1{
   font-size: 90px;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
   line-height: 1;
 }
-.titulo_2 .parrafo_2{
+.principal_titulo_2 .parrafo_2{
   font-size: 70px;
   font-weight: lighter;
   color: rgb(212, 238, 10);
   line-height: 1;
   margin-top: 0;
 }
-.titulo_2 .parrafo_3{
+.principal_titulo_2 .parrafo_3{
   font-size: 20px;
   color: #eee;
   margin-top: 25px;
   max-width: 600px;
   line-height: 1.4;
 }
-.titulo_2 .parrafo_4{
+.principal_titulo_2 .parrafo_4{
   font-size: 20px;
   color: #0a0a0a;
   margin: 0;                       
   line-height: 3;                  
   text-align: center;
 }
-.boton {
+.principal_boton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -268,26 +265,26 @@
   padding: 0 24px;
   border-radius: 35%;
 }
-.boton:hover {
+.principal_boton:hover {
   background-color: #b0d300;   
 }
-.boton:active {
+.principal_boton:active {
   transform: scale(0.97);      
 }
-.grupo_4 {
+.principal_grupo_4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;            
 }
-.fila {
+.principal_fila {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
   margin-top: 60px;
 }
-.boton_1 {
+.principal_boton_1 {
   display: flex;
   flex-direction: column;      
   justify-content: center;
@@ -300,39 +297,39 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.boton_1 .linea_1 {
+.principal_boton_1 .linea_1 {
   font-size: 35px;
   font-weight: bold;
   color: rgb(0, 0, 0);
   line-height: 1;
 }
-.boton_1 .linea_2 {
+.principal_boton_1 .linea_2 {
   font-size: 20px;
   color: #2c2b2b;
   line-height: 1;
 }
-.boton_1:hover {
+.principal_boton_1:hover {
   background-color: #9ed300;
 }
-.mitades {
+.principal_mitades {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 100%;
 }
-.fondo_4 {
+.principal_fondo_4 {
   flex: 2;
   background-color: white;
   padding-left: 210px;
   box-sizing: border-box;
   margin-top: 120px;
 }
-.letra_3 {
+.principal_letra_3 {
   color: #35d64d;
   font-size: 20px;
   font-weight: bold;
 }
-.columnas {
+.principal_columnas {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-auto-flow: column;
@@ -341,12 +338,12 @@
   justify-content: center;
   margin-top: 40px;
 }
-.columnas p {
+.principal_columnas p {
   margin: 5px;
   font-size: 18px;
   color: rgb(11, 11, 11);
 }
-.dos_fotos {
+.principal_dos_fotos {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -355,89 +352,143 @@
   width: 100%;
   box-sizing: border-box;
 }
-.tarjeta {
+.principal_tarjeta {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-top: 30px;
 }
-.tarjeta img {
+.principal_tarjeta img {
   width: 70px;
   height: 90px;
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
 }
-.tarjeta .texto_t p {
+.principal_tarjeta .texto_t p {
   margin: 0;
 }
-.tarjeta .texto_t p:first-child {
+.principal_tarjeta .texto_t p:first-child {
   font-size: 22px;
   font-weight: bold;
   color: #222;
 }
-.tarjeta .texto_t p:last-child {
+.principal_tarjeta .texto_t p:last-child {
   font-size: 15px;
   color: gray;
   margin-top: 4px;
 }
-.foto_derecha {
+.principal_foto_derecha {
   flex: 3;
   display: flex;
   justify-content: center;
   align-self: flex-end;
 }
-.foto_derecha img{
-  width: 50%;
-  max-width: 600px;
-  height: 450px;
-  object-fit: cover;
+.principal_mitades {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
 }
-.footer{
-  width: 98%;
+.principal_mitades_2_izq{
+  gap: 20px;
+}
+.principal_footer{
+  width: 100%;
   height: 250px;
   background-color: #173D2B;
-  margin-top: 80px;
-  border-radius: 20px;
+  margin-top: 150px;
 }
-.foto_left{
+.principal_foto_left{
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-left: 180px;
+  margin-left: 50px;
 }
-.titulo_3{
+.principal_titulo_3{
   display: flex;
   flex-direction: column;          
   line-height: 1.2;                
 }
-.letra_for{
+.principal_letra_for{
   color: rgb(243, 239, 239);
-  font-size: 25px;
+  font-size: 35px;
   text-align: left;
   padding-left: 10%;
   line-height: 34px;
   white-space: pre;  
 }
-.letra_fur{
+.principal_letra_fur{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  font-size: 26px;
+  padding-left: 12PX;
+  color: white;
 }
-.letra_fur p{
+.principal_letra_fur p{
   margin: 0;
 }
-.texto_foto_r{ 
+.principal_texto_foto_r{ 
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 50px;
+} 
+.principal_mitades2_der {
+  justify-content: center;     
 }
-.mitades {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+.principal_columnas_texto {
+  display: grid;
+  grid-template-rows: repeat(4, auto); 
+  grid-auto-flow: column;                
+  column-gap: 150px;
+  row-gap: 25px;
+  align-items: right;
+  padding-left: 350px;
 }
-  
+.principal_columnas_texto p {
+  margin: 0;
+  font-size: 15px;
+  color: #f6f6f6;
+}
+.principal_columnas_texto h1 {
+  margin: 0;
+  font-size: 25px;
+  color: #f6f6f6;
+}
+.principal_imagen_base{
+  position: relative;
+  width: 700px;
+}
+.principal_foto_fondo{
+  width: 70%;
+  height: 500px;
+  display: block;
+}
+.principal_foto_encima {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.principal_foto_1 {
+  top: 80px;
+  right: 180px;
+  height: auto;
+}
+.principal_foto_2 {
+  bottom: -80px;
+  left: -20px;
+  width: 40%;
+  height: 130px;
+} 
+/* parte plantilla principla jorge fin*/
+
+
