@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap');
+
+:root {
+  --green: #285b43;
+  --green-dark: #183d2d;
+  --green-light: #eaf1e6;
+  --lime: #d6e7a9;
+  --cream: #f7f8f2;
+  --ink: #26362c;
+  --muted: #718076;
+  --line: #e7ece4;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.site-header {
+  background: var(--green);
+  color: white;
+}
+
+.nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 17px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: var(--lime);
+  color: var(--green-dark);
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #e9f0e9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links .current {
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 2px solid var(--lime);
+  padding: 7px 0;
+}
+
+.intro,
+.content-grid {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.intro {
+  padding: 58px 28px 30px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 9px 0 10px;
+  color: var(--green-dark);
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(38px, 5vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.intro h1 span {
+  color: var(--green);
+}
+
+.lead {
+  margin: 0;
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.content-grid {
+  padding: 0 28px 60px;
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  padding: 27px;
+  box-shadow: 0 12px 30px #163b2610;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 14px;
+  background: var(--green-light);
+  color: var(--green);
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+
+.card-heading .eyebrow {
+  font-size: 10px;
+}
+
+.card h2 {
+  margin: 3px 0 0;
+  color: var(--green-dark);
+  font: 800 22px 'Nunito', sans-serif;
+}
+
+.muted {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.hours-list li span {
+  color: #56665c;
+}
+
+.hours-list li strong {
+  font-weight: 700;
+  text-align: right;
+}
+
+.closed {
+  color: #8a6457;
+}
+
+.visit-note {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  background: #f1f6e9;
+  border-radius: 13px;
+  padding: 13px 15px;
+  margin-top: 19px;
+  color: var(--green);
+}
+
+.visit-note > span {
+  font-size: 19px;
+}
+
+.visit-note p {
+  font-size: 12px;
+  margin: 0;
+  color: #586c5c;
+}
+
+.visit-note strong {
+  color: var(--green-dark);
+}
+
+.address {
+  margin: -4px 0 15px;
+  display: grid;
+  gap: 2px;
+}
+
+.address strong {
+  font-size: 14px;
+  color: var(--green-dark);
+}
+
+.address span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 270px;
+  border: 0;
+  border-radius: 13px;
+  background: #e7eee4;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 14px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background .2s;
+}
+
+.map-link:hover {
+  background: var(--green-dark);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+footer span {
+  color: var(--green);
+  padding: 0 4px;
+}
+

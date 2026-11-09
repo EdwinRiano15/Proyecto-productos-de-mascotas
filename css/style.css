@@ -1,0 +1,443 @@
+.fondo_1{
+    width: 98%;
+    height: 60px;
+    background-color: rgb(217, 217, 217);
+    border: 2px solid rgb(217, 217, 217);
+    box-sizing: border-box;        
+    padding: 0 20px;               
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.body{
+    border: white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+   width: 70px;
+   height: 70px;
+   border-radius: 60%;
+   object-fit: cover;
+   margin-left:  124px;
+}
+.letra_1{
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10%;
+    line-height: 34px;
+    white-space: pre;  
+}
+.letra_2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 160px;
+}
+.letra_2 p{
+  margin: 0;
+}
+.barra{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10%;
+}
+.opciones{
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 14px;
+}
+.opciones summary {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  color: rgb(12, 12, 12);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style: none;
+}
+.opciones summary::-webkit-details-marker {
+  display: none;
+}
+
+.opciones summary::after {
+  content: "▼";
+  font-size: 10px;
+  transition: transform 0.3s;
+}
+
+.opciones[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.opciones ul {
+  position: absolute;              
+  top: 100%;                       
+  left: 0;
+  width: 100%;
+  margin: 6px 0 0 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 10;                     
+  box-sizing: border-box;
+}
+
+.opciones li {
+  padding:  14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.opciones li:hover {
+  background-color: #f5f5f5;
+}
+.fondo_2{
+    width: 98%;
+    height: 100px;
+    background-color: rgb(249, 249, 249);
+    box-sizing: border-box;        
+    padding-left:  20px;               
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.texto_foto{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.izquierda img{
+   width: 60px;
+   height: 60px;
+   object-fit: cover;
+   flex-shrink: 0;
+}
+.fondo_2 p{
+   margin: 0;
+}
+.titulo {
+   display: flex;
+   flex-direction: column;          
+   line-height: 1.2;                
+}
+.linea1 {
+   font-size: 20px;
+   font-weight: bold;
+}
+.linea2 {
+   font-size: 13px;
+   color: gray;
+}
+.center{
+    align-items: center;
+    padding-left: 150px;
+    white-space: pre;
+}
+.meny{
+    align-items: center;
+    padding-left: 10px;
+}
+.nav{
+    border: white;
+    background-color:rgb(217, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista{
+  display: flex;              
+  flex-direction: row;        
+  flex-wrap: nowrap;          
+  gap: 60px;                  
+  list-style: none;           
+  margin: 0;                  
+  padding-left: 120px;                 
+}
+.lista li {
+  cursor: pointer;
+}
+.buscador {
+  position: relative;           
+  width: 250px;
+  padding-left: 260px;
+}
+.buscador input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 40px 8px 14px;    
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.buscador input:focus {
+  border-color: #e67e22;
+}
+
+.buscador button {
+  position: absolute;
+  right: 6px;                   
+  top: 50%;
+  transform: translateY(-50%);   
+  background: none;              
+  border: none;                 
+  padding: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buscador button:hover {
+  opacity: 0.7;
+}
+.imagen{
+  padding: 12px;
+}
+.fondo_3{
+  width: 98%;
+  height: 600px;
+  background-image: url("../images/Perro\ y\ gato\ sobre\ fondo\ verde\ vibrante.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 300px;
+}
+.titulo_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 460px;
+}
+.titulo_2 p {
+  margin: 0;
+}
+.titulo_2 .parrafo_1{
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.titulo_2 .parrafo_2{
+  font-size: 70px;
+  font-weight: lighter;
+  color: rgb(212, 238, 10);
+  line-height: 1;
+  margin-top: 0;
+}
+.titulo_2 .parrafo_3{
+  font-size: 20px;
+  color: #eee;
+  margin-top: 25px;
+  max-width: 600px;
+  line-height: 1.4;
+}
+.titulo_2 .parrafo_4{
+  font-size: 20px;
+  color: #0a0a0a;
+  margin: 0;                       
+  line-height: 3;                  
+  text-align: center;
+}
+.boton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 35%;
+}
+.boton:hover {
+  background-color: #b0d300;   
+}
+.boton:active {
+  transform: scale(0.97);      
+}
+.grupo_4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;            
+}
+.fila {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 60px;
+}
+.boton_1 {
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;
+  align-items: center;
+  gap: 4px;                    
+  padding: 30px 60px;          
+  background-color: #eae4e4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.boton_1 .linea_1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+.boton_1 .linea_2 {
+  font-size: 20px;
+  color: #2c2b2b;
+  line-height: 1;
+}
+.boton_1:hover {
+  background-color: #9ed300;
+}
+.mitades {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.fondo_4 {
+  flex: 2;
+  background-color: white;
+  padding-left: 210px;
+  box-sizing: border-box;
+  margin-top: 120px;
+}
+.letra_3 {
+  color: #35d64d;
+  font-size: 20px;
+  font-weight: bold;
+}
+.columnas {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  column-gap: 60px;
+  row-gap: 12px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.columnas p {
+  margin: 5px;
+  font-size: 18px;
+  color: rgb(11, 11, 11);
+}
+.dos_fotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;            
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+.tarjeta img {
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+.tarjeta .texto_t p {
+  margin: 0;
+}
+.tarjeta .texto_t p:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+.tarjeta .texto_t p:last-child {
+  font-size: 15px;
+  color: gray;
+  margin-top: 4px;
+}
+.foto_derecha {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+.foto_derecha img{
+  width: 50%;
+  max-width: 600px;
+  height: 450px;
+  object-fit: cover;
+}
+.footer{
+  width: 98%;
+  height: 250px;
+  background-color: #173D2B;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+.foto_left{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 180px;
+}
+.titulo_3{
+  display: flex;
+  flex-direction: column;          
+  line-height: 1.2;                
+}
+.letra_for{
+  color: rgb(243, 239, 239);
+  font-size: 25px;
+  text-align: left;
+  padding-left: 10%;
+  line-height: 34px;
+  white-space: pre;  
+}
+.letra_fur{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.letra_fur p{
+  margin: 0;
+}
+.texto_foto_r{ 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+}
+.mitades {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+  
